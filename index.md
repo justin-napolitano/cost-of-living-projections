@@ -3,58 +3,56 @@ slug: "github-cost-of-living-projections"
 title: "cost-of-living-projections"
 repo: "justin-napolitano/cost-of-living-projections"
 githubUrl: "https://github.com/justin-napolitano/cost-of-living-projections"
-generatedAt: "2025-11-23T08:30:05.244306Z"
+generatedAt: "2025-11-23T08:45:42.737151Z"
 source: "github-auto"
 ---
 
 
-# Technical Overview of the cost-of-living-projections Repository
+# Technical Overview of cost-of-living-projections
 
 ## Motivation
 
-This repository addresses two distinct but related economic modeling challenges: projecting annual living costs in major US cities and estimating the annual cost of shipping carbon dioxide from Europe to US ports. Both problems involve uncertainty and variability in input parameters, making Monte Carlo simulation an appropriate methodology.
+This project aims to provide quantitative projections for two distinct but related domains: the cost of living in major US cities and the economic cost of shipping carbon dioxide across the Atlantic. Both analyses employ Monte Carlo simulations to model uncertainty and variability in key parameters, enabling probabilistic estimates rather than deterministic outputs.
 
-The cost of living models aim to provide transparent, data-driven estimates to support salary negotiations and financial planning, while the shipping cost models contribute to understanding the economic feasibility of carbon transport infrastructure, a topic of growing importance in climate mitigation strategies.
+The cost of living models focus on Houston and New York City, providing a data-driven basis for salary negotiation and financial planning. The shipping carbon models estimate the annual cost of transporting supercritical CO2 from European ports to US terminals, a relevant problem in the context of carbon capture and storage infrastructure.
 
 ## Problem Statement
 
-1. **Cost of Living Projection**: Determine the annual housing and living expenses in Houston and New York City using probabilistic modeling to capture variability in rent and food costs. The goal is to estimate a salary threshold sufficient to meet typical landlord income requirements.
+1. **Cost of Living:** Estimating living expenses involves multiple uncertain variables such as rent, food, and other monthly costs. Static or point estimates fail to capture this variability, limiting their utility for informed financial decisions.
 
-2. **Shipping Carbon Cost Projection**: Model the annual economic cost of shipping supercritical CO2 from European ports to US ports. This involves accounting for variable shipping distances, capacities, port selections, and round-trip durations, incorporating uncertainty in these parameters.
+2. **Shipping Carbon:** The economic feasibility of shipping CO2 depends on complex factors including shipping distances, vessel capacities, and operational costs. Prior estimates contained errors due to unit conversion mistakes, underscoring the need for transparent and reproducible modeling.
+
+## Project Components
+
+### Monte Carlo Simulations
+
+Monte Carlo methods are used extensively to model distributions of uncertain variables. For cost of living, parameters such as rent and food costs are sampled from normal distributions bounded by empirically derived minima and maxima. For shipping costs, variables include shipping distances, capacities, port selections, and round-trip durations, with fixed and variable parameters modeled probabilistically.
+
+### Data Sources
+
+- NYC housing data is included as a CSV file, likely used to parameterize rent distributions.
+- Estimates for Houston living costs are based on personal experience and bounded by plausible ranges.
+- Shipping data and port information appear to be drawn from academic sources and prior reports, with references to work from Università Bocconi.
+
+### Notebooks and Reports
+
+- `cost_of_living_monte_carlo.ipynb` contains the core Monte Carlo models for living expenses.
+- `shipping_projections.ipynb` implements the shipping cost simulation.
+- Markdown files document methodology, revisions, and findings, including corrections for earlier errors.
 
 ## Implementation Details
 
-### Monte Carlo Simulation Approach
-
-The core technique employed is Monte Carlo simulation, where uncertain variables are modeled as random draws from probability distributions (primarily normal distributions bounded by minima and maxima). This approach allows quantification of uncertainty and the generation of confidence intervals for cost estimates.
-
-### Cost of Living Models
-
-- Data Sources: NYC housing data from 2018 and an estimate for Houston based on current rental conditions.
-- Variables Modeled: Monthly rent and food costs.
-- Methodology: For each variable, define a normal distribution with specified mean and standard deviation based on observed or estimated bounds. Sample repeatedly to simulate annual costs.
-- Output: Confidence intervals for annual rent and living expenses, used to infer adequate salary levels (e.g., $90,000 annual salary sufficient for qualifying for median NYC rent).
-
-### Shipping Cost Models
-
-- Variables: Shipping distances, tanker capacities, ports of origin and destination, round-trip durations, and cost per ton of transport.
-- Data Handling: Distances between ports and capacities are sampled from distributions reflecting variability. Fixed variables like cost per ton are currently static but planned for conversion to distributions.
-- Correction of Errors: A prior decimal conversion error in distance units was identified and corrected, demonstrating the importance of transparency and code publication.
-- Modeling Infrastructure: Includes referencing external research on LNG shipping capacities and adapting those to supercritical CO2.
-
-### Documentation and Transparency
-
-- Markdown reports accompany notebooks to document methodology, revisions, and findings.
-- The author emphasizes transparency to avoid unintentional misinformation, as evidenced by the public correction of earlier errors.
+- Simulations rely on Python 3 and NumPy for statistical sampling.
+- The Monte Carlo approach samples from normal distributions defined by median and standard deviation parameters.
+- Shipping cost models include dynamic variables such as shipping distance and capacity, modeled with random sampling within defined bounds.
+- Reports emphasize transparency and reproducibility, publishing code alongside results to facilitate verification and error correction.
 
 ## Practical Considerations
 
-- The models rely on somewhat dated or estimated data; updates and more granular data scraping are planned to improve accuracy.
-- The Monte Carlo approach provides probabilistic insights rather than deterministic answers, which is crucial for decision-making under uncertainty.
-- The modular structure allows for extension, such as adding more ports or refining cost parameters.
+- The cost of living models currently use dated or approximate data; ongoing work aims to improve data quality through web scraping and updated sources.
+- The shipping cost model was revised after discovering a unit conversion error that significantly inflated cost estimates, highlighting the importance of code transparency.
+- The project structure separates notebooks, markdown reports, and supporting files for clarity and modularity.
 
 ## Summary
 
-This project exemplifies the use of probabilistic modeling to address real-world economic questions with inherent uncertainty. It combines domain knowledge in urban economics and carbon shipping logistics with computational methods to produce transparent, reproducible analyses. The emphasis on code publication and error correction underscores a commitment to rigor and reliability in modeling.
-
-When returning to this work, focus on the data sources for distributions, the assumptions behind fixed vs. variable parameters, and the integration of domain-specific knowledge into the Monte Carlo framework.
+This repository serves as a computational toolkit for probabilistic cost projections in two domains with significant economic and policy relevance. It demonstrates the application of Monte Carlo methods to real-world problems, emphasizing reproducibility and iterative refinement. The work is technical and practical, intended as a reference for ongoing development and analysis rather than polished end-user software.
