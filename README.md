@@ -1,6 +1,6 @@
 # cost-of-living-projections
 
-This repository contains Monte Carlo simulation models focused on projecting costs related to living expenses in major US cities and the annual economic cost of shipping carbon dioxide from Europe to US ports. It includes Jupyter notebooks, markdown reports, and supporting data files for reproducible analysis.
+This repository contains Monte Carlo simulation models that project costs related to living expenses in major US cities and the annual economic cost of shipping carbon dioxide from Europe to US ports. It includes Jupyter notebooks, markdown reports, and supporting data files for reproducible analysis.
 
 ---
 
@@ -63,28 +63,25 @@ Open and run the following notebooks:
 ```
 ├── carbon-storage-projects.ipynb       # Analysis of carbon storage projects
 ├── cost_of_living_monte_carlo.ipynb     # Monte Carlo models for cost of living
-├── cost_of_living_monte_carlo.md         # Markdown report for cost of living projections
-├── cost_of_living_monte_carlo_files/     # Supporting files for the above notebook
-├── europe_ports.ipynb                     # Data and analysis on European ports
+├── cost_of_living_monte_carlo.md         # Markdown report on cost of living projections
+├── cost_of_living_monte_carlo_files/     # Supporting files for cost of living notebooks
+├── europe_ports.ipynb                     # Data and analysis related to European ports
 ├── histogram.png                         # Visualization image
-├── nyc-housing.csv                       # Dataset used for NYC housing cost modeling
-├── shipping_carbon_feasibility.md       # Feasibility report on shipping carbon
+├── nyc-housing.csv                       # NYC housing data
+├── README.md                            # This file
+├── shipping_carbon_feasibility.md       # Feasibility analysis of shipping carbon
 ├── shipping_carbon_feasibility_files/   # Supporting files for feasibility report
 ├── shipping_projections.ipynb           # Monte Carlo simulation of shipping costs
-├── shipping_projections.md               # Markdown report for shipping projections
-└── shipping_projections_files/           # Supporting files for shipping projections
+├── shipping_projections.md               # Markdown report on shipping projections
+├── shipping_projections_files/           # Supporting files for shipping projections
 ```
 
 ---
 
 ## Future Work / Roadmap
 
-- Update cost of living models with more recent and granular data, especially for NYC and Houston.
-- Improve shipping cost model by incorporating dynamic cost of transport distributions.
-- Extend the shipping model to include additional ports and shipping routes.
-- Automate data scraping pipelines for housing and shipping cost data.
-- Enhance visualization and reporting for clearer communication of uncertainty and results.
-
----
-
-*Note: This project emphasizes transparency and reproducibility. All analyses are published with code to ensure rigor.*
+- Update cost of living data, particularly for Houston, with more recent and granular data sources.
+- Refine Monte Carlo models with improved input distributions based on newly scraped or acquired data.
+- Extend shipping cost models to incorporate more detailed infrastructure and operational variables.
+- Automate data scraping and preprocessing to maintain up-to-date projections.
+- Enhance documentation and add more comprehensive tests for reproducibility.
