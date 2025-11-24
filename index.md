@@ -1,12 +1,27 @@
 ---
-slug: "github-cost-of-living-projections"
-title: "cost-of-living-projections"
-repo: "justin-napolitano/cost-of-living-projections"
-githubUrl: "https://github.com/justin-napolitano/cost-of-living-projections"
-generatedAt: "2025-11-23T08:45:42.737151Z"
-source: "github-auto"
+slug: github-cost-of-living-projections
+title: Monte Carlo Simulations for Cost of Living and CO2 Shipping Projections
+repo: justin-napolitano/cost-of-living-projections
+githubUrl: https://github.com/justin-napolitano/cost-of-living-projections
+generatedAt: '2025-11-23T08:45:42.737151Z'
+source: github-auto
+summary: >-
+  Technical overview of probabilistic models estimating US city living costs and transatlantic CO2
+  shipping using Monte Carlo simulation methods.
+tags:
+  - monte-carlo
+  - cost-of-living
+  - carbon-shipping
+  - python
+  - simulation
+  - data-analysis
+seoPrimaryKeyword: monte carlo simulation
+seoSecondaryKeywords:
+  - cost of living projections
+  - carbon shipping cost
+  - probabilistic modeling
+seoOptimized: true
 ---
-
 
 # Technical Overview of cost-of-living-projections
 
@@ -56,3 +71,4 @@ Monte Carlo methods are used extensively to model distributions of uncertain var
 ## Summary
 
 This repository serves as a computational toolkit for probabilistic cost projections in two domains with significant economic and policy relevance. It demonstrates the application of Monte Carlo methods to real-world problems, emphasizing reproducibility and iterative refinement. The work is technical and practical, intended as a reference for ongoing development and analysis rather than polished end-user software.
+
