@@ -21,6 +21,12 @@ seoSecondaryKeywords:
   - carbon shipping cost
   - probabilistic modeling
 seoOptimized: true
+topicFamily: datascience
+topicFamilyConfidence: 1
+topicFamilyNotes: >-
+  The post is a technical and data-driven project involving Monte Carlo simulations, data analysis,
+  and probabilistic modeling related to cost of living and CO2 shipping projections. It matches
+  perfectly the description and example slugs of the 'datascience' family.
 ---
 
 # Technical Overview of cost-of-living-projections
@@ -71,4 +77,5 @@ Monte Carlo methods are used extensively to model distributions of uncertain var
 ## Summary
 
 This repository serves as a computational toolkit for probabilistic cost projections in two domains with significant economic and policy relevance. It demonstrates the application of Monte Carlo methods to real-world problems, emphasizing reproducibility and iterative refinement. The work is technical and practical, intended as a reference for ongoing development and analysis rather than polished end-user software.
+
 
