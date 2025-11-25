@@ -1,24 +1,24 @@
 ---
 slug: github-cost-of-living-projections
 id: github-cost-of-living-projections
-title: Cost of Living Projections Using Monte Carlo Simulations
+title: Cost of Living Projections with Monte Carlo Simulations
 repo: justin-napolitano/cost-of-living-projections
 githubUrl: https://github.com/justin-napolitano/cost-of-living-projections
 generatedAt: '2025-11-24T21:34:18.276Z'
 source: github-auto
 summary: >-
-  Explore Monte Carlo simulations for projecting living expenses and shipping
-  costs in the US, with Jupyter notebooks and detailed documentation.
+  Explore Monte Carlo simulations for projecting living expenses and CO2
+  shipping costs in major US cities with Jupyter notebooks.
 tags:
   - python
   - cost-of-living
 seoPrimaryKeyword: cost of living projections
 seoSecondaryKeywords:
   - monte carlo simulation
-  - jupyter notebook examples
-  - living expenses analysis
+  - jupyter notebook tutorial
+  - python data analysis
   - shipping cost projections
-  - python data modeling
+  - reproducible research
 seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
