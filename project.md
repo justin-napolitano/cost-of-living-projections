@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/cost-of-living-projections
 generatedAt: '2025-11-24T21:34:18.276Z'
 source: github-auto
 summary: >-
-  Explore Monte Carlo simulations for projecting living expenses and CO2
-  shipping costs in major US cities with Jupyter notebooks.
+  Explore Monte Carlo simulations for projecting living expenses and CO2 shipping costs in major US
+  cities with Jupyter notebooks.
 tags:
   - python
   - cost-of-living
@@ -20,8 +20,8 @@ seoSecondaryKeywords:
   - shipping cost projections
   - reproducible research
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: datascience
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -115,4 +115,5 @@ Open and run the following notebooks:
 - Extend shipping cost models to incorporate more detailed infrastructure and operational variables.
 - Automate data scraping and preprocessing to maintain up-to-date projections.
 - Enhance documentation and add more comprehensive tests for reproducibility.
+
 
