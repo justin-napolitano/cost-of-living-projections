@@ -1,13 +1,13 @@
 ---
 slug: github-cost-of-living-projections
-title: Monte Carlo Simulations for Cost of Living and CO2 Shipping Projections
+title: Cost of Living Projections Using Monte Carlo Simulations
 repo: justin-napolitano/cost-of-living-projections
 githubUrl: https://github.com/justin-napolitano/cost-of-living-projections
 generatedAt: '2025-11-23T08:45:42.737151Z'
 source: github-auto
 summary: >-
-  Technical overview of probabilistic models estimating US city living costs and transatlantic CO2
-  shipping using Monte Carlo simulation methods.
+  Explore a project that models cost of living and shipping CO2 using Monte
+  Carlo simulations for better financial decision-making.
 tags:
   - monte-carlo
   - cost-of-living
@@ -15,18 +15,23 @@ tags:
   - python
   - simulation
   - data-analysis
-seoPrimaryKeyword: monte carlo simulation
+seoPrimaryKeyword: cost of living projections
 seoSecondaryKeywords:
-  - cost of living projections
-  - carbon shipping cost
-  - probabilistic modeling
+  - monte carlo simulations
+  - shipping carbon costs
+  - financial modeling
+  - data-driven decisions
+  - python data analysis
 seoOptimized: true
 topicFamily: datascience
 topicFamilyConfidence: 1
 topicFamilyNotes: >-
-  The post is a technical and data-driven project involving Monte Carlo simulations, data analysis,
-  and probabilistic modeling related to cost of living and CO2 shipping projections. It matches
-  perfectly the description and example slugs of the 'datascience' family.
+  The post is a technical and data-driven project involving Monte Carlo
+  simulations, data analysis, and probabilistic modeling related to cost of
+  living and CO2 shipping projections. It matches perfectly the description and
+  example slugs of the 'datascience' family.
+kind: project
+id: github-cost-of-living-projections
 ---
 
 # Technical Overview of cost-of-living-projections
